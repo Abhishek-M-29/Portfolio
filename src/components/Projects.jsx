@@ -4,12 +4,12 @@ import './Projects.css'
 
 const projects = [
   {
-    title: 'KJU',
+    title: 'Project Aegis (KJU)',
     desc: 'Clinical decision-support prototype that combines Neo4j knowledge graphs, Gemini, FastAPI, and React to ground answers in traceable context instead of plain model output.',
     tags: ['FastAPI', 'Neo4j', 'React', 'Docker'],
     type: 'AI Systems',
     detail: 'KG-RAG',
-    url: 'https://github.com/Abhishek-M-29/KJU',
+    url: 'https://project-aegis-kju.netlify.app/',
     featured: true,
   },
   {
@@ -52,7 +52,7 @@ export default function Projects() {
     <div className="container stagger" ref={ref}>
       <div className="projects-heading">
         <div>
-          <p className="section-label">Projects</p>
+          <p className="section-label">Work</p>
           <h2 className="section-title">Selected work</h2>
         </div>
         <div className="project-filters" role="tablist" aria-label="Filter projects">

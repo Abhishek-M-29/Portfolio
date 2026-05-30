@@ -17,7 +17,7 @@ const heroPhrases = [
   'Executive Lead @ The Big O',
   'RAG Pipelines \u200b•\u200b Knowledge Graphs',
   'Python \u200b•\u200b SQL \u200b•\u200b Neo4j',
-  'FastAPI \u200b•\u200b Node.js \u200b•\u200b React',
+  'FastAPI \u200b•\u200b Flask \u200b•\u200b LangChain',
   '7x Competitive Event Winner',
   'System Architecture & Design',
   'CSE @ VTU',

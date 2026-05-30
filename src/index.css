@@ -215,6 +215,14 @@ button:focus-visible {
   margin-bottom: 0;
 }
 
+.section-heading {
+  margin-bottom: 48px;
+}
+
+.section-heading--centered {
+  text-align: center;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .reveal {
     opacity: 0;

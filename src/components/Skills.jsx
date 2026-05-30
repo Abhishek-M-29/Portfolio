@@ -33,7 +33,10 @@ export default function Skills() {
 
   return (
     <div className="container stagger" ref={ref}>
-      <h2 className="section-title">Core toolkit</h2>
+      <div className="section-heading">
+        <p className="section-label">Skills</p>
+        <h2 className="section-title">Core toolkit</h2>
+      </div>
 
       {/* Skill cards - double-bezel shell */}
       <div className="skills-shell">

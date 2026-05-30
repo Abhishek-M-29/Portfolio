@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from 'react'
 import useTheme from '../hooks/useTheme'
+import { scrollTo } from '../lib/lenis'
 import './NavBar.css'
 
 const links = [
@@ -62,8 +63,7 @@ export default function NavBar() {
   const handleMenuLink = (href) => {
     setMobileOpen(false)
     setTimeout(() => {
-      const el = document.querySelector(href)
-      if (el) el.scrollIntoView({ behavior: 'smooth' })
+      scrollTo(href)
     }, 300)
   }
 
@@ -72,14 +72,14 @@ export default function NavBar() {
       <div ref={sentinelRef} style={{ position: 'absolute', top: 0, left: 0, width: 1, height: 1 }} />
       <header className={`navbar-wrapper ${scrolled ? 'scrolled' : ''}`}>
         <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-          <a href="#hero" className="navbar-logo" onClick={(e) => { e.preventDefault(); document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' }) }}>AM.</a>
+          <a href="#hero" className="navbar-logo" onClick={(e) => { e.preventDefault(); scrollTo('#hero') }}>AM.</a>
           <div className="navbar-links">
             {links.slice(1).map(({ href, label }) => (
               <a
                 key={href}
                 href={href}
                 className={`navbar-link ${activeSection === href ? 'active' : ''}`}
-                onClick={(e) => { e.preventDefault(); document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' }) }}
+                onClick={(e) => { e.preventDefault(); scrollTo(href) }}
               >
                 {label}
               </a>

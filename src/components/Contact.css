@@ -12,10 +12,6 @@
   background: var(--bg-card);
 }
 
-.contact-title {
-  text-align: center;
-}
-
 .contact {
   max-width: 600px;
   margin: 0 auto;

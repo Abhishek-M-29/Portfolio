@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Lenis from 'lenis';
+import { setLenis } from '../lib/lenis';
 
 export default function useLenis() {
   useEffect(() => {
@@ -15,6 +16,8 @@ export default function useLenis() {
       infinite: false,
     });
 
+    setLenis(lenis);
+
     function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
@@ -24,6 +27,7 @@ export default function useLenis() {
 
     return () => {
       lenis.destroy();
+      setLenis(null);
     };
   }, []);
 }

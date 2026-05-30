@@ -1,4 +1,4 @@
-.about {
+AI, backend, and systems that hold upAI, backend, and systems that hold up.about {
   max-width: var(--max-width);
   margin: 0 auto;
 }
@@ -21,9 +21,48 @@
   margin-bottom: 0;
 }
 
-.about-column p em {
-  color: var(--text);
+.about-column-title {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.about-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.timeline-row {
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+}
+
+.timeline-year {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.timeline-desc {
+  font-size: 0.95rem !important;
+  line-height: 1.6 !important;
+  margin-bottom: 0 !important;
+}
+
+.about-mantra {
+  color: var(--text) !important;
   font-style: italic;
+  font-weight: 500;
+  margin-bottom: 56px;
+  text-align: center;
+  font-size: 1.1rem;
 }
 
 /* Details double bezel */
@@ -80,51 +119,10 @@
   font-size: 0.9rem;
 }
 
-/* Stats highlights */
-.about-stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  margin-bottom: 48px;
-}
-
-.about-stat {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  padding: 24px 16px;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--bg-card);
-  text-align: center;
-  transition: border-color 0.3s var(--ease-out-expo), transform 0.3s var(--ease-out-expo);
-}
-
-.about-stat:hover {
-  border-color: var(--accent);
-  transform: translateY(-2px);
-}
-
-.about-stat-value {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: 700;
-  color: var(--accent);
-  letter-spacing: -0.03em;
-  line-height: 1;
-}
-
-.about-stat-label {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  font-family: var(--font-mono);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
 @media (max-width: 700px) {
   .about-body {
     grid-template-columns: 1fr;
-    gap: 0;
+    gap: 56px;
   }
   .about-details-shell {
     border-radius: var(--radius);
@@ -137,11 +135,5 @@
   .about-detail {
     border-right: 1px solid var(--border);
     padding: 8px 14px;
-  }
-  .about-stats {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .about-stat {
-    padding: 20px 12px;
   }
 }

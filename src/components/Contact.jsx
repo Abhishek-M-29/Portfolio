@@ -36,8 +36,10 @@ export default function Contact() {
       <div className="contact-glass">
         <div className="contact-glass-inner">
         <div className="contact">
-          <span className="eyebrow" style={{ margin: '0 auto 16px' }}>Connect</span>
-          <h2 className="contact-title">Let's build something useful</h2>
+          <div className="section-heading section-heading--centered">
+            <p className="section-label">Contact</p>
+            <h2 className="section-title">Let's build something useful</h2>
+          </div>
           <p className="contact-line">
             I am open to internships, applied AI projects, and backend engineering work where
             clear thinking matters as much as the stack.
