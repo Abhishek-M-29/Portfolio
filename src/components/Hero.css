@@ -28,7 +28,10 @@
   font-size: 0.74em;
   line-height: 1.08;
   color: var(--accent);
-  overflow-wrap: anywhere;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+  max-width: min(100%, 26ch);
 }
 
 .hero-cursor {
