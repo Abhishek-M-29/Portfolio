@@ -11,15 +11,16 @@ const socials = [
 ]
 
 const heroPhrases = [
-  '5x Hackathon Winner',
-  '7x Competitive Event Winner',
   'Backend & AI Engineer',
-  'Founding Member @ The Big O',
+  '5x Hackathon Winner',
+  'Building Multi-Agent Systems',
   'Executive Lead @ The Big O',
-  'Python \u200b•\u200b SQL \u200b•\u200b MongoDB',
-  'LLMs \u200b•\u200b System Architecture',
-  'CSE @ VTU',
-  'End-to-End Products'
+  'RAG Pipelines \u200b•\u200b Knowledge Graphs',
+  'Python \u200b•\u200b SQL \u200b•\u200b Neo4j',
+  'FastAPI \u200b•\u200b Node.js \u200b•\u200b React',
+  '7x Competitive Event Winner',
+  'System Architecture & Design',
+  'CSE @ VTU'
 ]
 
 export default function Hero() {
