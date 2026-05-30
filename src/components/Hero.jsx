@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import useTypewriter from '../hooks/useTypewriter'
 import useScrollReveal from '../hooks/useScrollReveal'
 import './Hero.css'
 
@@ -9,35 +10,29 @@ const socials = [
   { href: 'mailto:abhishekmurali2006@gmail.com', label: 'Email', icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> },
 ]
 
-const credentials = [
-  '5x Hackathon Winner',
-  '7x Competitive Event Winner',
-  'Backend & AI Engineer',
-  'Executive Lead @ The Big O',
-  'Python',
-  'SQL',
-  'MongoDB',
-  'LLMs',
-  'System Architecture',
-  'CSE @ VTU',
+const heroPhrases = [
+  '5x Hackathon Winner.',
+  '7x Competitive Event Winner.',
+  'Backend & AI Engineer.',
+  'Executive Lead @ The Big O.',
+  'Python • SQL • MongoDB.',
+  'LLMs • System Architecture.',
+  'CSE @ VTU.',
 ]
 
 export default function Hero() {
   const ref = useScrollReveal()
   const [imageLoaded, setImageLoaded] = useState(false)
+  const typedText = useTypewriter(heroPhrases, 68, 34, 1500)
 
   return (
     <div className="hero container stagger" ref={ref}>
       <div className="hero-content">
         <h1 className="hero-title">
-          Hi, I'm Abhishek.
+          Hi, I'm Abhishek.<br />
+          <span className="hero-title-type">{typedText}</span>
+          <span className="hero-cursor" aria-hidden="true">|</span>
         </h1>
-
-        <div className="hero-credentials" aria-label="Highlights">
-          {credentials.map((credential) => (
-            <span key={credential} className="hero-credential">{credential}</span>
-          ))}
-        </div>
 
         <div className="hero-actions">
           <a href="#projects" className="btn btn-primary" onClick={(e) => { e.preventDefault(); document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' }) }}>
