@@ -32,8 +32,7 @@ export default function Hero() {
       <div className="hero-content">
         <h1 className="hero-title">
           Hi, I'm Abhishek.<br />
-          <span className="hero-title-type">{typedText}</span>
-          <span className="hero-cursor" aria-hidden="true">|</span>
+          <span className="hero-title-type">{typedText}</span><span className="hero-cursor" aria-hidden="true">|</span>
         </h1>
 
         <div className="hero-actions">

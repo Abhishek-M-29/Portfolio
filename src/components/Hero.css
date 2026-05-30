@@ -24,14 +24,11 @@
 }
 
 .hero-title-type {
-  display: inline-block;
+  display: inline;
   font-size: 0.74em;
   line-height: 1.08;
   color: var(--accent);
-  overflow-wrap: normal;
-  word-break: normal;
-  hyphens: none;
-  max-width: min(100%, 26ch);
+  white-space: pre-wrap;
 }
 
 .hero-cursor {
