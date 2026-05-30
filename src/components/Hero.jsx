@@ -20,7 +20,12 @@ const heroPhrases = [
   'FastAPI \u200b•\u200b Node.js \u200b•\u200b React',
   '7x Competitive Event Winner',
   'System Architecture & Design',
-  'CSE @ VTU'
+  'CSE @ VTU',
+  'Competitive Programmer',
+  'Orchestrating LLMs & APIs',
+  'Building Tech Communities',
+  'From Hackathons to Production',
+  'Engineering Explainable AI'
 ]
 
 export default function Hero() {
