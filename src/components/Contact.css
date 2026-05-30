@@ -1,0 +1,117 @@
+.contact-glass {
+  position: relative;
+  padding: 3px;
+  border-radius: calc(var(--radius-lg) + 3px);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+}
+
+.contact-glass-inner {
+  padding: 56px 48px;
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+}
+
+.contact-title {
+  text-align: center;
+}
+
+.contact {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-line {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  text-align: center;
+  max-width: 450px;
+  margin-bottom: 40px;
+  line-height: 1.7;
+}
+
+.contact-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 24px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  border-color: var(--border-hover);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.contact-link-icon {
+  color: var(--text-muted);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.contact-link-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.contact-link-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.contact-link-handle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contact-link-arrow {
+  color: var(--text-muted);
+  flex-shrink: 0;
+  transition: transform 0.4s var(--ease-spring), color 0.3s ease;
+}
+
+.contact-link:hover .contact-link-arrow {
+  transform: translateX(3px);
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .contact-glass-inner {
+    padding: 36px 24px;
+  }
+
+  .contact-link {
+    padding: 14px 18px;
+  }
+
+  .contact-link-handle {
+    font-size: 0.9rem;
+  }
+}
