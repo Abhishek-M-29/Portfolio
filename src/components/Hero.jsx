@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import useScrollReveal from '../hooks/useScrollReveal'
-import useTypewriter from '../hooks/useTypewriter'
 import './Hero.css'
 
 const socials = [
@@ -10,35 +9,35 @@ const socials = [
   { href: 'mailto:abhishekmurali2006@gmail.com', label: 'Email', icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> },
 ]
 
-const phrases = [
-  'AI systems.',
-  'RAG pipelines.',
-  'agent workflows.',
-  'backend APIs.',
+const credentials = [
+  '5x Hackathon Winner',
+  '7x Competitive Event Winner',
+  'Backend & AI Engineer',
+  'Executive Lead @ The Big O',
+  'Python',
+  'SQL',
+  'MongoDB',
+  'LLMs',
+  'System Architecture',
+  'CSE @ VTU',
 ]
 
 export default function Hero() {
   const ref = useScrollReveal()
-  const typed = useTypewriter(phrases, 80, 40, 2000)
   const [imageLoaded, setImageLoaded] = useState(false)
 
   return (
     <div className="hero container stagger" ref={ref}>
       <div className="hero-content">
-        <div className="hero-status">
-          <span className="hero-status-dot" />
-          <span className="hero-status-text">Available for opportunities</span>
-        </div>
-
         <h1 className="hero-title">
-          Hi, I'm Abhishek.<br />
-          <span className="hero-title-type">{typed}</span>
-          <span className="hero-cursor">|</span>
+          Hi, I'm Abhishek.
         </h1>
 
-        <p className="hero-subtitle">
-          Computer Science undergrad building practical AI and backend systems: retrieval pipelines, agent workflows, and APIs designed to be useful beyond the demo.
-        </p>
+        <div className="hero-credentials" aria-label="Highlights">
+          {credentials.map((credential) => (
+            <span key={credential} className="hero-credential">{credential}</span>
+          ))}
+        </div>
 
         <div className="hero-actions">
           <a href="#projects" className="btn btn-primary" onClick={(e) => { e.preventDefault(); document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' }) }}>

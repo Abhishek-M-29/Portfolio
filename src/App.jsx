@@ -1,6 +1,5 @@
 import useLenis from './hooks/useLenis'
 import ParticleField from './components/ParticleField'
-import ScrollProgress from './components/ScrollProgress'
 import NavBar from './components/NavBar'
 import Hero from './components/Hero'
 import SectionDivider from './components/SectionDivider'
@@ -17,7 +16,6 @@ export default function App() {
   return (
     <>
       <a href="#hero" className="skip-to-content">Skip to content</a>
-      <ScrollProgress />
       <ParticleField />
       <NavBar />
       <main>
