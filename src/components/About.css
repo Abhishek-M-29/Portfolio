@@ -126,14 +126,33 @@ AI, backend, and systems that hold upAI, backend, and systems that hold up.about
   }
   .about-details-shell {
     border-radius: var(--radius);
+    overflow: hidden;
   }
   .about-details {
-    flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
     border-radius: var(--radius);
+    gap: 0;
   }
   .about-detail {
+    flex: 1 1 45%;
+    min-width: 0;
+    white-space: normal;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 18px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+  }
+  .about-detail:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+  .about-detail:not(:nth-child(even)) {
     border-right: 1px solid var(--border);
-    padding: 8px 14px;
   }
 }
