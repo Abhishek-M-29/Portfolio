@@ -141,14 +141,25 @@ AI, backend, and systems that hold upAI, backend, and systems that hold up.about
     white-space: normal;
     border-right: none;
     border-bottom: 1px solid var(--border);
-    padding: 18px 16px;
+    padding: 14px 14px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 4px;
   }
+  .about-detail-label {
+    font-size: 0.65rem;
+  }
+  .about-detail-value {
+    font-size: 0.82rem;
+    text-align: right;
+  }
   .about-detail:last-child {
     border-bottom: none;
+  }
+  .about-mantra {
+    font-size: 0.85rem;
+    margin-bottom: 32px;
   }
 }

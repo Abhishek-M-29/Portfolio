@@ -61,7 +61,7 @@ export default function About() {
         <div className="about-details">
           <div className="about-detail">
             <span className="about-detail-label">Education</span>
-            <span className="about-detail-value">B.E. Computer Science, AIT Bangalore</span>
+            <span className="about-detail-value">B.E. Computer Science, AIT</span>
           </div>
           <div className="about-detail">
             <span className="about-detail-label">CGPA</span>
