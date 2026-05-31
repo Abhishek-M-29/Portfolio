@@ -17,7 +17,7 @@ export default function Footer() {
           <div className="footer-left">
             <span className="footer-logo">AM.</span>
             <p className="footer-credit">
-              Built with <strong>React + Vite</strong> - focused on AI and backend work
+              Made by Abhishek ❤
             </p>
           </div>
           <div className="footer-socials">
